@@ -1,0 +1,22 @@
+# Shared configuration for this lore store. Committed deliberately: these values decide how
+# entries are scored and who reviews them, so everyone running the tool should use the same
+# ones rather than each configuring their own.
+
+# Entries live in this repository, alongside this file.
+destination: .
+
+# Any one of these may approve an entry, and they are the escalation target when the author
+# a candidate was mined from does not respond.
+reviewers:
+  - adamstallard
+
+# Authors whose provenance carries extra weight.
+experts:
+  - adamstallard
+
+# This repository is public, so entries citing private repositories are refused.
+publicStore: true
+
+scoring:
+  # Days for an entry's recency to halve.
+  halfLifeDays: 365
