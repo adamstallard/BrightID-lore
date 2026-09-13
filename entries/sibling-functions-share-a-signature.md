@@ -3,7 +3,7 @@ id: sibling-functions-share-a-signature
 claim: Functions in the same family should take the same leading arguments, so callers
   do not have to remember which one is different.
 scope: global
-status: provisional
+status: active
 conditions:
   paths:
     - web_services/**/*.js
@@ -16,6 +16,9 @@ provenance:
     author: abramsymons
     at: 2024-01-28
 supersedes: []
+reviewed:
+  by: adamstallard
+  at: 2026-09-13
 ---
 
 The 2024 instance opens with "as asked before", which is the tell: the same correction had already been made and had not stuck.

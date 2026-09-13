@@ -3,7 +3,7 @@ id: filter-in-the-query-not-in-code
 claim: Filter and aggregate in the database query rather than fetching a collection and
   searching it in application code.
 scope: global
-status: provisional
+status: active
 conditions:
   paths:
     - web_services/**/*.js
@@ -24,6 +24,9 @@ provenance:
     author: adamstallard
     at: 2022-06-25
 supersedes: []
+reviewed:
+  by: adamstallard
+  at: 2026-09-13
 ---
 
 Framed as cost on every call, not as style. Two variants appear: filtering client-side what the query could filter, and recomputing per request what could be computed once and stored.

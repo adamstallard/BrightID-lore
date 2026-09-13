@@ -2,7 +2,7 @@
 id: index-fields-you-query-on
 claim: Any field used to look up or filter documents needs an index, declared in initdb.
 scope: global
-status: provisional
+status: active
 conditions:
   paths:
     - web_services/**/*.js
@@ -28,6 +28,9 @@ provenance:
     author: adamstallard
     at: 2021-01-02
 supersedes: []
+reviewed:
+  by: adamstallard
+  at: 2026-09-13
 ---
 
 Raised repeatedly over four years, usually after a query was written against an unindexed field. Indexes live in `initdb.js`, and the list there has drifted from what the code actually queries more than once.
