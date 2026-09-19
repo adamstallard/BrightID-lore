@@ -16,7 +16,3 @@ experts:
 
 # This repository is public, so entries citing private repositories are refused.
 publicStore: true
-
-scoring:
-  # Days for an entry's recency to halve.
-  halfLifeDays: 365
